@@ -14,7 +14,7 @@
 	<a>
 
 6. Su kokiais atributais yra naudojamas HTML elementas <img>?
-	src, alt, width, height, title, loading, srcset, sizes, crossorigin, usemap, referrerpolicy
+	src, alt
 
 7. HTML elementu struktūra 
 		 <ul> 
@@ -30,10 +30,10 @@ gali būti naudojama:
 	<h1>
 
 9. Kurioje svetainėje tikrinama, ar puslapis atitinka HTML standartą?
-	html-validate.org
+	https://validator.w3.org
 
 10. Kuris HTML formos elementas neleidžia įrašyti teksto puslapyje?
-	<input type="submit"> arba <input type="button">
+	<input type="checkbox, radio">
 
 11. Tarp kokių HTML elementų aprašyta informacija (jos turinys) nebus vaizduojama puslapyje?
 	<head>
@@ -99,7 +99,7 @@ gali būti naudojama:
 	<img>, <video>, <audio>, <figure>
 
 30. Mygtuką HTML dokumente galime sukurti naudojant elementą <button>. Kokį dar elementą naudojant galime sukurti mygtuką?
-	<input type="button" value="text"
+	<input type="button" value="text">, <input type="submit">
 
 31. Koks HTML elementas naudojamas sukurti nuoroda į *.css dokumentą?
 	<link>
@@ -108,7 +108,7 @@ gali būti naudojama:
 	Cascading Style Sheets
 
 33. Kokie galimi CSS stiliaus naudojimo būdai?
-	Inline, internal, external
+	Inline, internal, external (kaip elemento atributas, kaip html elementas arba atskiras isorinis stiliaus failas)
 
 34. Koks simbolis (simbolių grupė) naudojamas CSS kai kreipiamės į HTML elemento ID atributą? 
 	#
@@ -123,7 +123,7 @@ gali būti naudojama:
 	::
 
 38. Kurie iš pateiktų CSS elementu yra „BOX“ modelio elementai (pažymėkite visus teisingus atsakymus)?
-	padding, border, margin
+	padding, border, margin, content
 
 39. Koks simbolis (simbolių grupė) naudojamas CSS kai norime kreiptis į visus HTML elementus (universalus selektorius)? 
 	*
@@ -139,7 +139,7 @@ div p - visus p elementus kurie yra viduje div
 div > p - visus p elementus kurie yra tiesioginiai div vaikai
 div, p - visus div elementus ir visus p elementus
 div + p - visus p elementus kurie yra iskart po div
-div ~ p - visus p elementus kurie yra po div ir yra ju broliai (t.y toje pacioje lygio strukturoje)
+div ~ p - visus p elementus esancius uz div
 
 43. CSS matavimo vienetai yra: 
 	px, pt, cm, mm, in, pc, q, em, rem, %, vh, vw, vmin, vmax, ch, ex, fr
@@ -168,16 +168,16 @@ div {
       margin: 10px; 
      }
 Kokio pločio sritį užima šis div elementas? 
-	250 + 20*2 + 5*2 + 10*2
+	320
 
 50. Kokia tvarka CSS byloje reikia surašyti a elemento savybes, kad pseudo klasės idealiai veiktų?
-	a:link
+	a, a:link, a:visited, a:hover, a:active
 
 51. Kokia CSS savybė naudojama, kai norime pakeisti teksto spalvą?
-	color
+	color:
 
 52. Kokia CSS savybė naudojama, kai norime pakeisti teksto šrifto tipą? 
-	font-size
+	font-family
 
 53. Turime CSS byloje aprašytą elemento savybę:
 .text{
@@ -203,10 +203,10 @@ Kaip galima  sutrumpinti padding savybės kodą?
 	sticky: Tas pats kas fixed, bet tuo pačiu priklauso nuo tėvinio elemento
 
 57. Kokie HTML elementų išdėstymo būdai  yra naudojami kuriant tinklalapį?
-	CSS flex arba grid
+	display: flex, grid, float, inline block, position
 
 58. Kokią klasę reikia priskirti HTML blokui, kad jis Bootstrap grid'e užimtų 5 stulpelius praleidžiant vieną stulpelį?
-	sukurti tuscia div su col, tada col-5 
+	.col-5, offset-1
 
 59. Turime HTML dokumento fragmentą:  <a href="index.html">HOME</a> Kas yra „href“?
 	linkas i index.html.
@@ -242,10 +242,10 @@ Kaip galima  sutrumpinti padding savybės kodą?
 	container
 
 70. Kokia „Bootstrap“ klasė suapvalina paveikslėlio kampus (paveikslėlį padaro skritulio formos)? 
-	rounded
+	rounded, .img-circle
 
 71. Kokia „Bootstrap“ klasė naudojama kai norima sukurti standartinį meniu (nav bar)?
-	navbar
+	<nav class="navbar navbar-default">
 
 72. „Bootstrap5“ tinklelio (grid) sistemą sudaro penkios klasės, apibrėžiančios ekrano dydį. Kokios tai klasės?
 	xl, lg, md, sm, ir tuscia(prasideda nuo 0px)
@@ -254,7 +254,7 @@ Kaip galima  sutrumpinti padding savybės kodą?
 	absolute, relative, fixed, sticky
 
 74. Kuo skiriasi let nuo var?
-	Var galioja funkcijos ribose 
+	Var globalus
 	let veikia blokuose {}.
 
 75. Kam naudojamas 'use strict' 
@@ -282,8 +282,8 @@ Kaip galima  sutrumpinti padding savybės kodą?
 	true
 	false
 
-83. Kurioje HTML dokumento vietoje gali būti talpinamas skriptas (JavaScript) arba nuorodą į išorinį skripto failą? Paaiškinti async, defer 
-	<script> gali buti <head> tage arba <body> apacioje 
+83. Kurioje HTML dokumento vietoje gali būti talpinamas skriptas (JavaScript) arba nuorodą į išorinį skripto failą? Paaiškinti async, defer
+	<script> gali buti <head> tage (jei nereikia manipuliuoti dom) arba <body> apacioje 
 	async lauks kol gaus atsakymus is await ir netrukdys puslapiui uzsikraut
 	defer lauks kol puslapis visiskai uzsikraus
 
@@ -301,7 +301,7 @@ Kaip galima  sutrumpinti padding savybės kodą?
 	SELECT * FROM vartotojai ORDER BY vardas DESC;
 
 3. Su kokiomis lentelės operacijomis naudojamas “ALTER” atributas.
-	Redaguoti lenteles
+	esamu lenteliu redagavimas(duomenu keitimas, pervadinimas)
 
 4. Paaiškinkite, kaip ištrinsite iš “vartotojai” lentelės visus įrašus, "vardas" stulpelyje turinčius reikšmę "Jonas" 
 	DELETE FROM vartotojai WHERE vardas = 'Jonas';
@@ -330,16 +330,16 @@ Kaip galima  sutrumpinti padding savybės kodą?
 	UPDATE vartotojai SET pavarde = 'Jonaitis' WHERE pavarde = 'Petraitis';
 
 11. Kam naudojami indeksai?
-	Pagreitinti paiešką, nes leidžia duplikuotus įrašus
+	Pagreitinti paiešką, nes leidžia duplikuotus įrašus. Automatiskai generuoti primary key laukus (ID)
 
 12. Apibrėžkite, kas nurodo žemiausią ir aukščiausią reikšmių intervalą, išrenkant duomenis iš lentelės, t.y. rezultate pateikia duomenis tam tikram reikšmių intervalui?
-	BETWEEN
+	BETWEEN ... AND ...
 
 13. Paaiškinkite, kokiu sakiniu nurodoma viena ar daugiau rikiavimo sąlygų?
-	ORDER BY
+	GROUP BY
 
 14. Paaiškinti 'OR' ir 'AND' operatorius
-	OR naudojamas, kai norime, kad viena salyga butu teisinga, and kai norime, kad visos butu teisingos
+	OR naudojamas, kai norime, kad viena salyga butu teisinga, AND naudojame, kai norime, kad visos salygos butu teisingos
 
 15. Apibrėžkite, kuri SQL užklausa yra naudojama skirtingoms reikšmėms gauti?
 	distinct()
