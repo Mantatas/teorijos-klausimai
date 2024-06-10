@@ -318,7 +318,7 @@ Kaip galima  sutrumpinti padding savybės kodą?
 	Norėdami pašalinti duomenis iš duomenų bazės : DELETE
 	Norėdami įrašyti duomenis į duomenų bazę : INSERT
 
-8. Norėdami įtraukti naują įrašą į "vartotojai" lentelę, rašysite (Ignas)
+8. Norėdami įtraukti naują įrašą į "vartotojai" lentelę, rašysite
 	INSERT INTO vartotojai
 	VALUES
 
@@ -332,7 +332,7 @@ Kaip galima  sutrumpinti padding savybės kodą?
 11. Kam naudojami indeksai?
 	Pagreitinti paiešką, nes leidžia duplikuotus įrašus
 
-12. Apibrėžkite, kas nurodo žemiausią ir aukščiausią reikšmių intervalą, išrenkant duomenis iš lentelės, t.y. rezultate pateikia duomenis tam tikram reikšmių intervalui? (Ignas)
+12. Apibrėžkite, kas nurodo žemiausią ir aukščiausią reikšmių intervalą, išrenkant duomenis iš lentelės, t.y. rezultate pateikia duomenis tam tikram reikšmių intervalui?
 	BETWEEN
 
 13. Paaiškinkite, kokiu sakiniu nurodoma viena ar daugiau rikiavimo sąlygų?
