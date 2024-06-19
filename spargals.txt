@@ -367,3 +367,93 @@ Kaip galima  sutrumpinti padding savybės kodą?
 
 23. Parašykite SQL sintaksę, nusakančią sąlygos neigimą
 	SELECT columns FROM table_name WHERE NOT condition;
+
+
+----------------------GIT
+
+
+1. kuri komanda skirta "online" GIT repositorijos pridėjimui prie lokalios
+	git remote add origin <url>
+
+2. kuri komanda skirta kodo pakeitimų išsiuntimui į "online" GIT repozitoriją 
+	git push origin <branch>
+
+3. Išskirkite kokią (-ias) komandą (-as) rašysite, norėdami pridėti failus ir sukurti įrašą lokalioje repozitorijoje (gali būti keli atsakymo pasirinkimo variantai)
+	git add ('.', '<file name>', '-A')
+
+4. kuri komanda skirta "online" GIT repositorijos klonavimui 
+	git clone
+
+5. kuri komanda skirta naujos atšakos (ang. branch) repositorijoje sukūrimui 
+	git branch <name>
+
+6. kuri komanda skirta naujos kodo versijos užfiksavimui kodo repositorijoje  
+	git commit (-m)
+
+7. kuri komanda skirta failų pridėjimui į repositoriją (stage)
+	git add
+
+8. kuri komanda skirta GIT repositorijos sukūrimui
+	git init
+
+9. išvardinti kodo versijavimo sistemas
+	git, svn, hg
+
+10. kaip vadinamas serveris, kuriame sukurta aplikacija pasiekiama vartotojams 
+	hosting server
+
+11. kaip vadinamas serveris, kuriame yra testuojama kuriama aplikacija testing arba staging server
+	testing arba staging server
+
+-----------------Projektų ir kodo valdymas komandoje, analitika
+
+
+1. Apibūdinkite kokiomis savybėmis ir funkcijomis pasižymi integruota programavimo aplinka
+	code editor, kompiliavimas, irankiai naudoti versijavimo sistemas
+
+2. kam naudojamos projektų valdymo sistemos (Jira, Trello ir kt.)
+	organizuoti, valdyti ir stebeti projektu eiga ir darbu vykdyma, registruoti klaidas, reikalavimus
+
+3. programinės įrangos kūrimo etapai
+	planavimas, dizainas, programavimas, testavimas
+
+4. kaip vadinasi reikalavimai, skirti sistemos paslaugų aprašymui, kaip sistema turėtų reaguoti į ypatingus duomenų įvedimus ir kaip sistema elgsis ypatingose situacijose?
+	funkciniai reikalavimai
+
+5. kaip vadinasi reikalavimai, skirti sistemos paslaugų arba funkcijų apribojimams, tokiems kaip laiko apribojimai, kūrimo proceso apribojimai, standartai, ir pan.? 
+	Nefunkciniai reikalavimai.
+
+6. kokie klausimai aptariami kasdieniniame Scrum susitikime (daily Scrum meeting)?
+	ka padarem nuo paskutinio susitikimo, ka planuoju iki kito susitikimo, kokios kliutys ar problemos
+
+7. už ką yra atsakingas produkto vadybininkas (product owner)? 
+	reikalavimu valdymas, vizijos ir strategijos formavimas ir pateikimas, prioritetu nustatymas, komunikacija su komanda, reikalavimu aiskinimas ir priotizavimas, stebejimas ir analize
+
+8. kokias roles atlieka Scrum meistras (Scrum master)? 
+	komandos palaikymas ir saugojimas nuo kliuciu, scrum proceso palaikymas, mokymas ir tobulejimas, problemu sprendimas, tarpininkavimas, ataskaitu remimas
+
+9. Eilės tvarka išdėstykite sprinto dalių eiliškumą
+	planavimas, darbo eiga, darbo atlikimas, apzvalga, retrospektyva, ataskaita
+
+10. kas vyksta sprinto peržiūros susitikimo (sprint review) metu?
+	produkto demonstracija, produkto savininko griztamasis rysys, vertinimas ir aptarimas, atnaujintas irasas
+
+11. kas yra Scrum inovatyvus projektu valdymas
+	iteratyvumas ir inkrementalumas, ekspermentavimas ir tobulinimas, rizikos valdymas, bendradarbiavimas, lankstumas
+
+12. planavimo pokeris (planning poker) 
+	technika, kuri naudojama kad padetu komandai ivertinti uzduociu sudetinguma
+
+13. kas sudaro Scrum komandą?
+	product owner, scrum master, dev team (programuotojai ir testuotojai)
+
+14. Nustatykite, ką kiekvienas sprintas turi
+	darbo planavimas, eiga, atlikimas, apzvalga, retrospektyva ir ataskaita
+
+15. Kiek ilgiausia trunka sprintas?
+	iki 4 sav.
+	
+16. Apibūdinkite sprinto retrospektyvos susitikimo paskirtį
+	padeti komandai pazvelgti i savo darbo procesa, identifikuoti sekmes ir issukius ir ismokti is ju, kad patobulintu savo darba ateityje
+
+
